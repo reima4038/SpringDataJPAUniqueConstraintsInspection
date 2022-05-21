@@ -2,7 +2,7 @@
 
 ## 目的
 
-DDDのEntityはIDがによってオブジェクトの一意性を表す。
+DDDのEntityはIDによってオブジェクトの一意性を表す。
 SpringDataJPAとH2Databaseを使って、
 Entityのインスタンスを新しく作り直してもIDが同一なら同じものとみなされるかを検証する。
 
