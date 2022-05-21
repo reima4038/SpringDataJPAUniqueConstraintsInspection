@@ -29,7 +29,7 @@ public class DemoRestController {
 
     @PostMapping(value = "/book", params = "evilUpdate")
     public void evilUpdate(@PathParam("id") String id) {
-        service.update(id,"Test data is updated with evil method.");
+        service.evilUpdate(id,"Test data is updated with evil method.");
     }
 
 }
