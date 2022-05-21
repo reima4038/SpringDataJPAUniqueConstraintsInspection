@@ -47,5 +47,6 @@ PersistableインターフェースをEntityで実装し、オーバーライド
 * isNew 未実装: update, evilUpdate どちらも更新可。
 * isNew 実装 true: update は更新可、 evilUpdate は更新不可。
 * isNew 実装 false: update, evilUpdate どちらも更新可。
+
 ※ update: findしたEntityに値を変更してsave, evilUpdate: 既存のIdを新規のEntityに設定してsave.
 
