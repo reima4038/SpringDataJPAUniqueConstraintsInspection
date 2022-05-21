@@ -40,6 +40,7 @@ PersistableインターフェースをEntityで実装し、オーバーライド
 
 ……が、本リポジトリで検証した際は、isNew()をtrueで返しても、Selectされてしまった。
 -> 悪い例として実装していたevilUpdateメソッドが呼ばれていなかった。
+
 <img width="812" alt="スクリーンショット 2022-05-21 18 50 26" src="https://user-images.githubusercontent.com/1913126/169647521-75d7f613-df0f-4c25-8e0f-6a93afb81d94.png">
 
 結果としては以下の通り。
