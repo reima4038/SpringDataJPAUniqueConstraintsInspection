@@ -14,9 +14,12 @@ public class Book implements Persistable<String> {
     public Book(String storeName) {
         this.storeName = storeName;
     }
-    public Book(){};
+    public Book(){}
     // evil Constructor
-    public Book(String id, String storeName){}
+    public Book(String id, String storeName){
+        this.id = id;
+        this.storeName = storeName;
+    }
 
     @Id
     @GeneratedValue(generator = "UUID")
